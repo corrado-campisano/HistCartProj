@@ -1,0 +1,61 @@
+#
+# Ignore everything within the DEV folder
+HistCartDEV/*
+
+#
+# But not these files, which are in subdirectories
+#HistCartDEV/DB-dbeaver/dbeaver_GUI/dbeaver-ce-23.2.4-linux.gtk.x86_64.tar.gz
+#HistCartDEV/BE-sts4ide/STS-4_IDE/spring-tool-suite-4-4.20.1.RELEASE-e4.29.0-linux.gtk.x86_64.tar.gz
+#HistCartDEV/FE-eclipse-php/eclipse-php_IDE/eclipse-php-2023-09-R-linux-gtk-x86_64.tar.gz
+
+#
+# to do so, the above paths need to be un-ignored and re-ignored:
+
+#
+# this is for the DB client installer
+
+!HistCartDEV/DB-dbeaver/
+HistCartDEV/DB-dbeaver/*
+
+!HistCartDEV/DB-dbeaver/dbeaver_GUI/
+HistCartDEV/DB-dbeaver/dbeaver_GUI/*
+
+!HistCartDEV/DB-dbeaver/dbeaver_GUI/dbeaver-ce-23.2.4-linux.gtk.x86_64.tar.gz
+
+# tested OK with:
+# git check-ignore ./HistCartDEV/DB-dbeaver/dbeaver_GUI/dbeaver-ce-23.2.4-linux.gtk.x86_64.tar.gz
+
+#
+#this is for the STS ide
+
+!HistCartDEV/BE-sts4ide/
+HistCartDEV/BE-sts4ide/*
+
+!HistCartDEV/BE-sts4ide/STS-4_IDE/
+HistCartDEV/BE-sts4ide/STS-4_IDE/*
+
+!HistCartDEV/BE-sts4ide/STS-4_IDE/spring-tool-suite-4-4.20.1.RELEASE-e4.29.0-linux.gtk.x86_64.tar.gz
+!HistCartDEV/BE-sts4ide/STS-4_IDE/lombok-1.18.30.jar
+# tested OK with:
+# git check-ignore ./HistCartDEV/BE-sts4ide/STS-4_IDE/spring-tool-suite-4-4.20.1.RELEASE-e4.29.0-linux.gtk.x86_64.tar.gz
+# git check-ignore ./HistCartDEV/BE-sts4ide/STS-4_IDE/lombok-1.18.30.jar
+
+#
+#this is for the React ide
+
+#!HistCartDEV/FE-eclipse-php/
+
+!HistCartDEV/FE-eclipse-php/
+HistCartDEV/FE-eclipse-php/*
+
+!HistCartDEV/FE-eclipse-php/eclipse-php_IDE/
+HistCartDEV/FE-eclipse-php/eclipse-php_IDE/*
+
+!HistCartDEV/FE-eclipse-php/eclipse-php_IDE/eclipse-php-2023-09-R-linux-gtk-x86_64.tar.gz
+
+# tested OK with:
+# git check-ignore ./HistCartDEV/FE-eclipse-php/eclipse-php_IDE/eclipse-php-2023-09-R-linux-gtk-x86_64.tar.gz
+
+
+
+

@@ -1,0 +1,81 @@
+
+The first reqs came as notes and links, in italian, sent as messages to my own "Saved Messages" chat, in Telegram.
+
+The following is what has been "copied as text" and pasted here.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+corrado campisano, [17/11/23 19:42]
+GitHub - google-map-react/google-map-react: Google map library for react that allows rendering components as markers :tada:
+https://github.com/google-map-react/google-map-react
+
+corrado campisano, [17/11/23 19:42]
+HistoCart
+
+corrado campisano, [17/11/23 20:06]		--> REFERS TO THIS LINK BELOW: https://it.m.wikipedia.org/wiki/Orazi_e_Curiazi  
+Questo non è un "Evento Storico", vedi sezioni Realtà Storica vs. Leggenda, quanto piuttosto un semplice "Record Storiografico"
+
+corrado campisano, [17/11/23 20:11]		--> REFERS TO THIS LINK BELOW: https://it.m.wikipedia.org/wiki/Mezio_Fufezio
+Questo è l'unico "Evento Storico" associabile a quanto sopra, cioè la guerra, la vittoria di Roma, lo squartamento del re e la distruzione di Alba Longa
+
+corrado campisano, [17/11/23 20:12]
+https://it.m.wikipedia.org/wiki/Orazi_e_Curiazi
+
+corrado campisano, [17/11/23 20:13]
+https://it.m.wikipedia.org/wiki/Mezio_Fufezio
+
+corrado campisano, [17/11/23 20:14]
+Tutto ciò avviene in un certo posto (spaziotempo), sia per l'evento storico che per la leggenda...
+
+corrado campisano, [17/11/23 20:18]
+E comporta il cambiamento della estensione del dominio di Roma, che si espande, nonché di quello di Alba Longa, che sparisce, venendo inglobato come territorio del dominio di Roma, con una data forma di relazione (dominio diretto, socio, provincia, ecc - ogni epoca e ogni impero, o quel che è, ha le sue)
+
+corrado campisano, [17/11/23 20:25]
+Implementiamo intanto il FE, con la mappa di base ed il BE con le entità fin qui definite (evento storico, leggenda o record storiografico, dominio storico, cioè una regione dominata da qualcuno per un certo periodo e variazione di un dominio storico a seguito di un evento storico) o accennate (le varie forme di aggregazione dei sotto-domini in domini, tipo socio, provincia, feudo, marca, contea, repubblica federata, ecc)
+
+corrado campisano, [17/11/23 20:35]
+Poi si fa quanto segue sul FE:
+ - si implementa una pagina (magari basata su vari componenti, che finora li abbiamo usati poco) per gestire (CRUD) le varie entità di cui sopra sulla mappa, collegandole in base alla struttura sopra accennata
+ - si implementa una pagina di navigazione, che, per ogni evento storico o leggenda, mostra l'evoluzione geografica che da questo discende
+ - più in là, si implementerà anche una pagina che consente di seguire tutti gli eventi storici e/o leggenda associati ad un dominio storico, volendo permettendo di passare anche a predecessore/successore
+
+corrado campisano, [17/11/23 20:36]
+Età regia di Roma - Wikipedia
+https://it.wikipedia.org/wiki/Et%C3%A0_regia_di_Roma
+
+corrado campisano, [17/11/23 20:36]
+Esempio di Dominio Storico, con predecessore e successore
+
+corrado campisano, [17/11/23 20:38]
+A proposito, vedere se è possibile usare i metadati di Wikipedia...
+
+corrado campisano, [17/11/23 20:40]
+Sul BE, in parallelo, si implementano le API rest per supportare il CRUD e le varie navigazioni...
+
+corrado campisano, [17/11/23 20:40]
+Poi sostanzialmente basta...
+
+corrado campisano, [17/11/23 20:41]
+Si tratta solo di inserire i dati...
+
+corrado campisano, [17/11/23 20:44]
+Poi magari si possono fare implementazioni più interessanti, tipo per ogni evento storico, confrontare quello che esce dalle wiki dei vari paesi (che i link alle pagine - con tanto di link "dettagliato", diretto alla sezione leggenda vs realtà storica - sono obbligatori e quindi utilizzabili)
+
+corrado campisano, [17/11/23 20:45]
+Ah... E openstreetmap no ???
+
+corrado campisano, [17/11/23 20:47]
+Test open street maps with react - CodeSandbox
+https://codesandbox.io/s/2sftb
+
+corrado campisano, [17/11/23 20:47]
+C'è, c'è...
+
+corrado campisano, [17/11/23 20:59]
+Ma soprattutto... Le battaglie, all' interno delle guerre di lunga durata, sono eventi storici, e comportano ovviamente cambiamenti di domini territoriali "provvisori", ovvero le Zone Controllate, analoghe ai sotto-domini
+
+corrado campisano, [17/11/23 21:04]
+Quindi va distinto un evento storico del tipo battaglia campale o cmq qualcosa di breve (anche solo perché se ne sa poco, tipo Roma vs Alba Longa di cui sopra) ed eventi storici tipo seconda guerra mondiale, dove, ad esempio, si potrebbe ricapitolare quello che è successo con le tre fasi: Barbarossa, Stalingrado e Bagration
+
+corrado campisano, [17/11/23 21:04]
+Ma questo lo si farà in seguito...
